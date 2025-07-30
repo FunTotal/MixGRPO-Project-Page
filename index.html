@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>MixGRPO: Unlocking Flow-Based GRPO Efficiency with Mixed ODE-SDE</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">MixGRPO: Unlocking Flow-Based GRPO Efficiency with Mixed ODE-SDE</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=lQsMoJsAAAAJ&hl=en&oi=ao" target="_blank">Junzhe Li</a><sup>1,2,3 *</sup>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=TSMchWcAAAAJ&hl=en&oi=ao" target="_blank">Yutao Cui</a><sup>1 *</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?hl=en&user=TaM4e4wAAAAJ" target="_blank">Tao Huang</a><sup>1</sup>,</span>
+                  </span>
+                  <span class="author-block">
+                    Yinping Ma<sup>3</sup>,</span>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?hl=en&user=TaM4e4wAAAAJ" target="_blank">Chun Fan</a><sup>3</sup>,</span>
+                  </span>
+                  <span class="author-block">
+                    Miles Yang<sup>1</sup>,</span>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=igtXP_kAAAAJ&hl=en" target="_blank">Zhao Zhong</a><sup>1</sup>,</span>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Hunyuan, Tencent</span>
+                    <span class="author-block"><sup>2</sup>School of Computer Science, Peking University</span>
+                    <span class="author-block"><sup>3</sup>Computer Center, Peking University</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                        <!-- Arxiv PDF link -->
+                        <span class="link-block">
+                          <a href="https://arxiv.org/abs/2507.21802" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="fas fa-file-pdf"></i>
+                          </span>
+                          <span>Paper</span>
+                        </a>
+
+                        <!-- Github link -->
+                        <span class="link-block">
+                          <a href="https://github.com/Tencent-Hunyuan/MixGRPO" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="fab fa-github"></i>
+                          </span>
+                          <span>Code</span>
+                        </a>
+                      </span>
+
+                        <!-- ArXiv abstract Link -->
+                        <span class="link-block">
+                          <a href="https://huggingface.co/tulvgengenr/MixGRPO" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" width="24" height="24">
+                          </span>
+                          <span>Model</span>
+                        </a>
+                      </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <h2 class="title is-3" style="text-align: center;">Pre-experiments</h2>
+  <div class="hero-body">
+    <div class="container">
+        <div class="hero-body">
+          <img src="static/images/prelab1.png"/>
+          <h2 class="subtitle has-text-centered"  style="margin-top: 20px;">
+            Figure 1: Performance comparison for different numbers of denoising steps optimized. The performance improvement of DanceGRPO relies on more steps optimized. MixGRPO achieves optimal performance while requiring only <strong>4 steps</strong>.
+          </h2>
+        </div>
+        <div class="hero-body">
+          <img src="static/images/prelab2.png"/>
+          <h2 class="subtitle has-text-centered"  style="margin-top: 20px;">
+            Figure 2:Visualization of t-SNE for images sampled with different strategies. Employing SDE sampling in the early stages of the denoising process results in a more discrete data distribution.
+          </h2>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Although GRPO substantially enhances flow matching models in human preference alignment of image generation, methods such as FlowGRPO still exhibit inefficiency due to the necessity of sampling and optimizing over all denoising steps specified by the Markov Decision Process (MDP). In this paper, we propose MixGRPO, a novel framework that leverages the flexibility of mixed sampling strategies through the integration of stochastic differential equations (SDE) and ordinary differential equations (ODE). This streamlines the optimization process within the MDP to improve efficiency and boost performance. Specifically, MixGRPO introduces a sliding window mechanism, using SDE sampling and GRPO-guided optimization only within the window, while applying ODE sampling outside. This design confines sampling randomness to the time-steps within the window, thereby reducing the optimization overhead, and allowing for more focused gradient updates to accelerate convergence. Additionally, as time-steps beyond the sliding window are not involved in optimization, higher-order solvers are supported for sampling. So we present a faster variant, termed MixGRPO-Flash, which further improves training efficiency while achieving comparable performance. MixGRPO exhibits substantial gains across multiple dimensions of human preference alignment, outperforming DanceGRPO in both effectiveness and efficiency, with nearly 50% lower training time. Notably, MixGRPO-Flash further reduces training time by 71%. Codes and models are available at MixGRPO.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+
+<!-- Youtube video -->
+<section class="hero is-small">
+  <h2 class="title is-3" style="text-align: center;">METHOD</h2>
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="hero-body">
+          <img src="static/images/method1.png",  style="max-width: 100%;"/>
+          <h2 class="subtitle has-text-centered"  style="margin-top: 20px;">
+          </h2>
+        </div>
+        <div class="hero-body">
+          <img src="static/images/method2.png", style="max-width: 100%;"/>
+          <h2 class="subtitle has-text-centered"  style="margin-top: 20px;">
+            MixGRPO Algorithm
+          </h2>
+        </div>
+        <div class="hero-body">
+          <img src="static/images/method3.png",  style="max-width: 100%;"/>
+          <h2 class="subtitle has-text-centered"  style="margin-top: 20px;">
+            MixGRPO-Flash Algorithm
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <h2 class="title is-3" style="text-align: center;">Experiments</h2>
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/table1.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+            Table1: Comparison results for overhead and performance. MixGRPO achieves the best performance across multiple metrics. MixGRPO-Flash significantly reduces sampling time while outperforming DanceGRPO. <strong>Bold</strong> rank 1. <u>Underline</u> rank 2. <sup>*</sup>The Frozen strategy means that optimization is only employed at the initial denoising steps.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/table2.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+            Table2: Comparison results for in-domain and out-of-domain reward metrics. The results demonstrate that MixGRPO achieves the best performance on both in-domain and out-of-domain rewards, whether using a single or multiple reward models.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/table3.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+            Table3: Ablation experiments on important parameters of sliding windows.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/table4.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+            Table4: Comparison of performance across high-order solvers.
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/experiment1.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+            Figure 1: Qualitative comparison. MixGRPO achieve superior performance in both semantics and aesthetics.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/experiment2.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+            Figure 2: Qualitative comparison with different training-time sampling steps. The performance of MixGRPO does not significantly decrease with the reduction in overhead. <sup>*</sup>The Frozen strategy means that optimization is only employed at the initial denoising steps.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/experiment3.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+            Figure 3: Comparison of the visualization results of FLUX, DanceGRPO, and MixGRPO under HPS-v2.1 as the reward model.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/experiment4.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+            Figure 4: Comparison of the visualization results of FLUX, DanceGRPO, and MixGRPO under HPS-v2.1 and CLIP Score as the reward models.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End image carousel -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @misc{li2025mixgrpounlockingflowbasedgrpo,
+          title={MixGRPO: Unlocking Flow-based GRPO Efficiency with Mixed ODE-SDE}, 
+          author={Junzhe Li and Yutao Cui and Tao Huang and Yinping Ma and Chun Fan and Miles Yang and Zhao Zhong},
+          year={2025},
+          eprint={2507.21802},
+          archivePrefix={arXiv},
+          primaryClass={cs.AI},
+          url={https://arxiv.org/abs/2507.21802}, 
+    }
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
